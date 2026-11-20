@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!-- Desktop: replace the apps dropdown with a button that toggles the home screen. -->
+    <t t-inherit="web.NavBar.AppsMenu" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o_navbar_apps_menu')]" position="replace">
+            <div t-if="!isScopedApp" class="o_navbar_apps_menu">
+                <button type="button"
+                    class="dropdown-toggle o_sl_home_menu_toggle"
+                    t-att-class="{ 'active': slHomeState.isOpen }"
+                    data-hotkey="h"
+                    title="Home Menu"
+                    aria-label="Home Menu"
+                    t-on-click="onSlHomeMenuToggle">
+                    <i class="oi oi-apps"/>
+                </button>
+            </div>
+        </xpath>
+    </t>
+
+</templates>

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "odoo-sl-aevon-test",
+      "runtimeExecutable": "/Users/dmprabath/dmprabath/Work/Aevon/odoo-19-community/odoo-19/.env-3-14-3/bin/python",
+      "runtimeArgs": ["source/odoo-bin", "-c", "odoo.conf", "-d", "sl_aevon_test", "--db-filter=^sl_aevon_test$", "--http-port=8079", "--gevent-port=8082", "--dev=xml"],
+      "port": 8079
+    }
+  ]
+}

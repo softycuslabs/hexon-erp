@@ -1,0 +1,170 @@
+// Full-screen home menu, below the main navbar.
+.o_sl_home_menu {
+    position: fixed;
+    inset: var(--o-navbar-height, 46px) 0 0 0;
+    z-index: $zindex-dropdown - 1;
+    overflow-y: auto;
+    background:
+        radial-gradient(circle at 15% 0%, rgba($o-brand-primary, .18), transparent 55%),
+        radial-gradient(circle at 90% 100%, rgba($o-brand-odoo, .16), transparent 50%),
+        $o-gray-100;
+    animation: o_sl_home_menu_in .15s ease-out;
+}
+
+@keyframes o_sl_home_menu_in {
+    from { opacity: 0; transform: scale(1.02); }
+    to   { opacity: 1; transform: none; }
+}
+
+.o_sl_home_menu_container {
+    max-width: 880px;
+    padding-top: 6vh;
+    padding-bottom: 4rem;
+}
+
+.o_sl_home_menu_search {
+    position: relative;
+    max-width: 520px;
+    margin: 0 auto 3rem;
+
+    .oi-search {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        color: $o-gray-500;
+        pointer-events: none;
+    }
+}
+
+.o_sl_home_menu_search_input {
+    width: 100%;
+    padding: .7rem 1rem .7rem 2.6rem;
+    border: 1px solid rgba($o-black, .08);
+    border-radius: 999px;
+    background: rgba($o-white, .85);
+    box-shadow: 0 2px 10px rgba($o-black, .05);
+    outline: none;
+    transition: border-color .15s, box-shadow .15s;
+
+    &:focus {
+        border-color: rgba($o-brand-primary, .5);
+        box-shadow: 0 0 0 .2rem rgba($o-brand-primary, .15);
+    }
+}
+
+.o_sl_apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 1.75rem .5rem;
+    justify-items: center;
+}
+
+.o_sl_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+    padding: .6rem .25rem;
+    border-radius: 12px;
+    color: $o-gray-800;
+    text-decoration: none;
+    outline: none;
+    transition: background-color .12s;
+
+    &:hover, &.o_sl_focused {
+        background: rgba($o-white, .6);
+        color: $o-gray-900;
+
+        .o_sl_app_icon {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba($o-black, .18);
+        }
+    }
+}
+
+.o_sl_app_icon {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 2px 6px rgba($o-black, .12);
+    background: $o-white;
+    transition: transform .12s, box-shadow .12s;
+}
+
+.o_sl_app_name {
+    margin-top: .55rem;
+    font-size: .92rem;
+    line-height: 1.2;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.o_sl_menu_items {
+    max-width: 620px;
+    margin: 2.5rem auto 0;
+    border-radius: 10px;
+    background: rgba($o-white, .85);
+    box-shadow: 0 2px 10px rgba($o-black, .05);
+    overflow: hidden;
+}
+
+.o_sl_menu_item {
+    display: block;
+    padding: .6rem 1rem;
+    color: $o-gray-800;
+    text-decoration: none;
+
+    & + & {
+        border-top: 1px solid rgba($o-black, .05);
+    }
+
+    &:hover, &.o_sl_focused {
+        background: rgba($o-brand-primary, .1);
+        color: $o-gray-900;
+    }
+}
+
+.o_sl_no_result {
+    margin-top: 2rem;
+    text-align: center;
+    color: $o-gray-600;
+}
+
+// The apps button is a plain toggle, not a dropdown: no caret.
+.o_main_navbar .o_sl_home_menu_toggle::after {
+    display: none;
+}
+
+// While the home menu is shown, the navbar only keeps the apps button and the systray.
+body.o_sl_home_menu_open .o_main_navbar {
+    .o_menu_brand,
+    .o_menu_sections,
+    .o_navbar_breadcrumbs {
+        visibility: hidden;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .o_sl_home_menu_container {
+        padding-top: 1.5rem;
+    }
+    .o_sl_home_menu_search {
+        margin-bottom: 1.75rem;
+    }
+    .o_sl_apps {
+        grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+        gap: 1.25rem .25rem;
+    }
+    .o_sl_app {
+        width: 84px;
+    }
+    .o_sl_app_icon {
+        width: 54px;
+        height: 54px;
+    }
+    .o_sl_app_name {
+        font-size: .8rem;
+    }
+}

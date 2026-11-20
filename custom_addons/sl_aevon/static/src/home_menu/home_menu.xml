@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="sl_aevon.HomeMenu">
+        <div t-if="homeState.isOpen" class="o_sl_home_menu" t-ref="root">
+            <div class="o_sl_home_menu_container container">
+                <div class="o_sl_home_menu_search">
+                    <i class="oi oi-search" aria-hidden="true"/>
+                    <input type="text"
+                        t-ref="input"
+                        class="o_sl_home_menu_search_input"
+                        placeholder="Search apps and menus..."
+                        aria-label="Search apps and menus"
+                        t-att-value="state.query"
+                        t-on-input="onInput"/>
+                </div>
+
+                <div t-if="visibleApps.length" class="o_sl_apps" role="listbox">
+                    <a t-foreach="visibleApps" t-as="app" t-key="app.id"
+                        class="o_sl_app o_app"
+                        t-att-class="{ 'o_sl_focused': state.focusedIndex === app_index }"
+                        t-att-href="getMenuItemHref(app)"
+                        t-att-data-menu-xmlid="app.xmlid"
+                        role="option"
+                        t-on-click="(ev) => this.onClickEntry(ev, app)">
+                        <img class="o_sl_app_icon" t-att-src="app.webIconData" alt="" draggable="false"/>
+                        <span class="o_sl_app_name" t-esc="app.name"/>
+                    </a>
+                </div>
+
+                <div t-if="visibleMenuItems.length" class="o_sl_menu_items">
+                    <a t-foreach="visibleMenuItems" t-as="item" t-key="item.menu.id"
+                        class="o_sl_menu_item"
+                        t-att-class="{ 'o_sl_focused': state.focusedIndex === visibleApps.length + item_index }"
+                        t-att-href="getMenuItemHref(item.menu)"
+                        t-att-data-menu-xmlid="item.menu.xmlid"
+                        t-on-click="(ev) => this.onClickEntry(ev, item.menu)">
+                        <t t-esc="item.label"/>
+                    </a>
+                </div>
+
+                <div t-if="state.query and !entries.length" class="o_sl_no_result">
+                    No apps or menus match "<t t-esc="state.query"/>".
+                </div>
+            </div>
+        </div>
+    </t>
+
+</templates>

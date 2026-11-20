@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>app index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <style>
+        /* Cybrosys red active state for all pill tab groups (Bootstrap
+           hardcodes these in 5.0.2, so they cannot be set inline per pill). */
+        .nav-pills .nav-link {
+            color: #334155;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #c30010 !important;
+            border-color: #c30010 !important;
+            color: #fff !important;
+        }
+    </style>
+</head>
+
+
+<body style="font-family: &quot;Montserrat&quot;, sans-serif;background-color: #c3001008;">
+<div class="container-fluid cmpad">
+    <div style="background-color:#fff;border:1px solid #f0dede;border-radius:16px;padding:18px 32px;box-shadow:0 6px 22px rgba(195,0,16,.07);margin:16px 0;">
+        <div class="row justify-content-between align-items-center g-3">
+            <div class="col-lg-3 col-md-4 text-center text-md-start">
+                <img src="//apps.odoocdn.com/apps/assets/17.0/theme_boec/images/Cybrosys.png?fcdde35" style="width:230px;max-width:100%;" alt="Cybrosys Technologies">
+            </div>
+            <div class="col-lg-9 col-md-8">
+                <div class="d-flex flex-column align-items-center align-items-md-end gap-2">
+                    <div class="d-flex align-items-center gap-2 flex-wrap justify-content-center justify-content-md-end">
+                        <span style="font-weight:700;color:#334155;">Supports:</span>
+                        <span style="background-color:#c30010;color:#fff;font-weight:600;padding:8px 22px;border-radius:50px;font-size:.95rem;box-shadow:0 5px 14px rgba(195,0,16,.30);">Community</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 flex-wrap justify-content-center justify-content-md-end">
+                        <span style="font-weight:700;color:#334155;">Availability:</span>
+                        <span class="hdr-avail" style="display:inline-block;padding:7px 15px;border-radius:30px;font-weight:600;font-size:.92rem;background-color:#ecfdf3;border:1px solid #bbf3d0;color:#15803d;">
+                            <img src="./assets/icons/tick.png" alt="" width="17" height="17"> On Premise
+                        </span>
+                        <span class="hdr-avail" style="display:inline-block;padding:7px 15px;border-radius:30px;font-weight:600;font-size:.92rem;background-color:#fef2f2;border:1px solid #fbd5d5;color:#b91c1c;">
+                            <img src="./assets/icons/close.png" alt="" width="17" height="17"> Odoo Online
+                        </span>
+                        <span class="hdr-avail" style="display:inline-block;padding:7px 15px;border-radius:30px;font-weight:600;font-size:.92rem;background-color:#fef2f2;border:1px solid #fbd5d5;color:#b91c1c;">
+                            <img src="./assets/icons/close.png" alt="" width="17" height="17"> Odoo.sh
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid cmpad text-center" style="padding-top:34px;padding-bottom:6px;">
+
+    <span style="display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#c30010;font-weight:700;background-color:#fdecec;border:1px solid #f4d4d4;padding:7px 16px;border-radius:30px;margin-bottom:18px;">Budget Management - Community Edition</span>
+    <h3 class="mainhead" style="font-size:2.5rem;font-weight:800;color:#0f172a;letter-spacing:-.02em;margin:0 0 12px;line-height:1.15;">Odoo 19 <span style="color:#c30010;">Budget Management</span> for Community Edition.</h3>
+    <p class="para" style="font-size:1.25rem;color:#000;margin:0 0 26px;">Plan, monitor, and control your company expenses and revenues in Odoo 19 Community with analytic-based budgeting, automated theoretical tracking, and insightful graphical views.</p>
+    <div style="text-align:center;">
+        <a href="mailto:odoo@cybrosys.com" class="hdr-btn" style="display:inline-block;text-align:center;padding:14px 28px;border-radius:50px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;min-width:210px;background-color:#c30010;margin:4px 6px;">
+            <img src="./assets/icons/mail.png" alt="" width="23" height="23" style="vertical-align:middle;margin-right:8px;"> Email Us
+        </a>
+        <a href="https://wa.me/919074270811" class="hdr-btn" style="display:inline-block;text-align:center;padding:14px 28px;border-radius:50px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;min-width:210px;background-color:#25d366;margin:4px 6px;">
+            <img src="./assets/icons/whatsapp.png" alt="" width="23" height="23" style="vertical-align:middle;margin-right:8px;"> +91 9074270811
+        </a>
+    </div>
+    <div style="display:inline-block;margin-top:24px;padding:9px 24px;background-color:#faf6f1;border:1.5px solid #f0e2d0;border-radius:50px;">
+        <span style="display:inline-block;width:36px;height:36px;border-radius:50%;background-color:#f97316;color:#fff;text-align:center;line-height:36px;vertical-align:middle;margin-right:10px;"><i class="fa fa-headphones" style="font-size:16px;"></i></span>
+        <span style="display:inline-block;vertical-align:middle;color:#334155;font-weight:700;font-size:.98rem;">Instant Support</span>
+        <span style="display:inline-block;vertical-align:middle;color:#eec2c2;margin:0 8px;">|</span>
+        <span style="display:inline-block;vertical-align:middle;color:#c30010;font-weight:600;font-size:.95rem;word-break:break-all;">https://support.cybrosys.com/instant-support</span>
+    </div>
+</div>
+
+<!-- ===== Hero banner ===== -->
+<!-- Hero banner temporarily disabled
+<div class="container-fluid cmpad">
+    <div class="text-center mb-4" style="padding-left:2.5rem;padding-right:2.5rem;">
+        <img src="./assets/hero.jpg"
+             alt="Odoo 19 Full Accounting Kit — the complete finance suite"
+             style="width:100%;height:auto;display:block;border-radius:16px;box-shadow:0 16px 48px rgba(12,47,39,.32);"/>
+    </div>
+</div>
+-->
+
+
+<div class="container-fluid cmpad py-2 py-md-5">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="cc-card cc-blog h-100" style="background-color:#fff;border:1px solid #f0e6e6;border-radius:18px;padding:32px;box-shadow:0 6px 20px rgba(195,0,16,.07);">
+                <div style="width:58px;height:58px;border-radius:15px;background-color:#c30010;display:inline-block;text-align:center;line-height:58px;margin-bottom:20px;">
+                    <img src="./assets/icons/document.png" alt="" width="28" height="28" style="vertical-align:middle;">
+                </div>
+                <h3 style="font-size:1.4rem;font-weight:700;color:#1b2233;margin:0 0 8px;letter-spacing:-.01em;">Read the Blog</h3>
+                <p style="font-size:15.5px;color:#475062;line-height:1.6;margin:0 0 22px;">Explore our detailed blog on the Odoo&nbsp;19 Full Accounting Kit &mdash; key features, setup and practical tips.</p>
+                <a href="https://www.cybrosys.com/blog/what-are-the-key-features-of-odoo-18-full-accounting-kit-for-community" target="_blank" rel="noopener noreferrer" class="cc-btn" style="display:inline-block;padding:11px 24px;border-radius:50px;font-weight:600;font-size:14.5px;text-decoration:none;color:#fff;background-color:#c30010;box-shadow:0 6px 16px rgba(195,0,16,.28);">
+                    <img src="./assets/icons/copy.png" alt="" width="16" height="16"> Read Blog
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="cc-card cc-vid h-100" style="background-color:#fff;border:1px solid #f0dede;border-radius:18px;padding:32px;box-shadow:0 6px 20px rgba(195,0,16,.06);">
+                <div style="width:58px;height:58px;border-radius:15px;background-color:#c30010;display:inline-block;text-align:center;line-height:58px;margin-bottom:20px;">
+                    <img src="./assets/icons/play.png" alt="" width="22" height="22" style="vertical-align:middle;">
+                </div>
+                <h3 style="font-size:1.4rem;font-weight:700;color:#1b2233;margin:0 0 8px;letter-spacing:-.01em;">Watch the Tutorial</h3>
+                <p style="font-size:15.5px;color:#475062;line-height:1.6;margin:0 0 22px;">Watch a full video walkthrough of the module on our YouTube channel for hands-on learning.</p>
+                <a href="https://www.youtube.com/watch?v=8xNN-yXtA_A" target="_blank" rel="noopener noreferrer" class="cc-btn" style="display:inline-block;padding:11px 24px;border-radius:50px;font-weight:600;font-size:14.5px;text-decoration:none;color:#fff;background-color:#c30010;box-shadow:0 6px 16px rgba(195,0,16,.28);">
+                    <img src="./assets/icons/play.png" alt="" width="14" height="14"> Watch Demo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid cmpad py-2 py-md-5">
+    <div class="highlights-section">
+        <h2 class="text-center" style="font-size:2.1rem;font-weight:800;color:#1b2233;margin:0;letter-spacing:-0.01em;">Key Highlights</h2>
+        <div style="width:70px;height:4px;margin:16px auto 12px;border-radius:3px;background-color:#c30010;"></div>
+        <p class="text-center" style="color:#5b6472;font-size:1.08rem;max-width:62ch;margin:0 auto 30px;">Key budget management features added to Odoo&nbsp;19 Community accounting — at a glance.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="hlx-card" style="height:100%;background-color:#fff;border:1px solid #f0e6e6;border-radius:16px;padding:28px 26px;box-shadow:0 6px 18px rgba(195,0,16,.07);position:relative;overflow:hidden;">
+                    <div class="hlx-ic" style="width:56px;height:56px;border-radius:14px;display:inline-block;text-align:center;line-height:56px;background-color:#fdecec;border:1px solid #f4d4d4;margin-bottom:20px;">
+                        <i class="fa fa-cubes" style="color:#c30010;font-size:22px;line-height:1;"></i>
+                    </div>
+                    <h3 style="font-size:19px;font-weight:700;color:#1b2233;margin:0 0 8px;letter-spacing:-0.01em;"> Odoo 19 Community Edition Support.</h3>
+                    <p style="font-size:15px;color:#4b5563;margin:0;line-height:1.6;">Budget management system in Odoo 19 Community Edition.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="hlx-card" style="height:100%;background-color:#fff;border:1px solid #f0e6e6;border-radius:16px;padding:28px 26px;box-shadow:0 6px 18px rgba(195,0,16,.07);position:relative;overflow:hidden;">
+                    <div class="hlx-ic" style="width:56px;height:56px;border-radius:14px;display:inline-block;text-align:center;line-height:56px;background-color:#fdecec;border:1px solid #f4d4d4;margin-bottom:20px;">
+                        <i class="fa fa-list-ul" style="color:#c30010;font-size:22px;line-height:1;"></i>
+                    </div>
+                    <h3 style="font-size:19px;font-weight:700;color:#1b2233;margin:0 0 8px;letter-spacing:-0.01em;"> Budgetary Positions.</h3>
+                    <p style="font-size:15px;color:#4b5563;margin:0;line-height:1.6;"> Create and manage Budgetary Positions.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="hlx-card" style="height:100%;background-color:#fff;border:1px solid #f0e6e6;border-radius:16px;padding:28px 26px;box-shadow:0 6px 18px rgba(195,0,16,.07);position:relative;overflow:hidden;">
+                    <div class="hlx-ic" style="width:56px;height:56px;border-radius:14px;display:inline-block;text-align:center;line-height:56px;background-color:#fdecec;border:1px solid #f4d4d4;margin-bottom:20px;">
+                        <i class="fa fa-pie-chart" style="color:#c30010;font-size:22px;line-height:1;"></i>
+                    </div>
+                    <h3 style="font-size:19px;font-weight:700;color:#1b2233;margin:0 0 8px;letter-spacing:-0.01em;"> Manage with Analytic Accounts.</h3>
+                    <p style="font-size:15px;color:#4b5563;margin:0;line-height:1.6;"> Manage budgets with analytic accounts.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="hlx-card" style="height:100%;background-color:#fff;border:1px solid #f0e6e6;border-radius:16px;padding:28px 26px;box-shadow:0 6px 18px rgba(195,0,16,.07);position:relative;overflow:hidden;">
+                    <div class="hlx-ic" style="width:56px;height:56px;border-radius:14px;display:inline-block;text-align:center;line-height:56px;background-color:#fdecec;border:1px solid #f4d4d4;margin-bottom:20px;">
+                        <i class="fa fa-calculator" style="color:#c30010;font-size:22px;line-height:1;"></i>
+                    </div>
+                    <h3 style="font-size:19px;font-weight:700;color:#1b2233;margin:0 0 8px;letter-spacing:-0.01em;">Budgetary Planning with Planned Amount.</h3>
+                    <p style="font-size:15px;color:#4b5563;margin:0;line-height:1.6;">Budgetary planning with planned amount on each Analytic Account.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="hlx-card" style="height:100%;background-color:#fff;border:1px solid #f0e6e6;border-radius:16px;padding:28px 26px;box-shadow:0 6px 18px rgba(195,0,16,.07);position:relative;overflow:hidden;">
+                    <div class="hlx-ic" style="width:56px;height:56px;border-radius:14px;display:inline-block;text-align:center;line-height:56px;background-color:#fdecec;border:1px solid #f4d4d4;margin-bottom:20px;">
+                        <i class="fa fa-file-text-o" style="color:#c30010;font-size:22px;line-height:1;"></i>
+                    </div>
+                    <h3 style="font-size:19px;font-weight:700;color:#1b2233;margin:0 0 8px;letter-spacing:-0.01em;">       Budgetary Reports.
+</h3>
+                    <p style="font-size:15px;color:#4b5563;margin:0;line-height:1.6;"> Budgetary reports are also available.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="hlx-card" style="height:100%;background-color:#fff;border:1px solid #f0e6e6;border-radius:16px;padding:28px 26px;box-shadow:0 6px 18px rgba(195,0,16,.07);position:relative;overflow:hidden;">
+                    <div class="hlx-ic" style="width:56px;height:56px;border-radius:14px;display:inline-block;text-align:center;line-height:56px;background-color:#fdecec;border:1px solid #f4d4d4;margin-bottom:20px;">
+                        <i class="fa fa-bar-chart" style="color:#c30010;font-size:22px;line-height:1;"></i>
+                    </div>
+                    <h3 style="font-size:19px;font-weight:700;color:#1b2233;margin:0 0 8px;letter-spacing:-0.01em;">Graphical View.</h3>
+                    <p style="font-size:15px;color:#4b5563;margin:0;line-height:1.6;">Each list of record can also be switched to a graphical view of it. .</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ===== Tabbed section (Screenshot / Features / FAQ / Latest Release) ===== -->
+<div class="container-fluid cmpad py-2 py-md-5">
+    <div class="tabs-design1">
+        <ul class="nav nav-pills justify-content-start justify-content-md-center pb-4"
+            style="flex-flow: nowrap;overflow: hidden;overflow-x: auto;" id="pills1" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="screenshot-tab" data-bs-toggle="pill" data-bs-target="#screenshot"
+                   type="button" role="tab"
+                   style="width: max-content;border-radius: 50px;margin: 0 5px;padding: 12px 24px;font-weight: 500;border: 2px solid #e9ecef;position: relative;">
+                    Screenshot
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="features-tab" data-bs-toggle="pill" data-bs-target="#features" type="button"
+                   role="tab"
+                   style="width: max-content;border-radius: 50px;margin: 0 5px;padding: 12px 24px;font-weight: 500;border: 2px solid #e9ecef;position: relative;">
+                    Features
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="faq-tab" data-bs-toggle="pill" data-bs-target="#faq" type="button" role="tab"
+                   style="width: max-content;border-radius: 50px;margin: 0 5px;padding: 12px 24px;font-weight: 500;border: 2px solid #e9ecef;position: relative;">
+                    Frequent Questions
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="latest-release-tab" data-bs-toggle="pill" data-bs-target="#latest-release"
+                   type="button" role="tab"
+                   style="width: max-content;border-radius: 50px;margin: 0 5px;padding: 12px 24px;font-weight: 500;border: 2px solid #e9ecef;position: relative;">
+                    Latest Release
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content bg-white rounded-4" style="border: 2px solid #e9ecef;border-radius: 10px;"
+             id="pills1Content">
+
+            <!-- Screenshot tab -->
+            <div class="tab-pane fade show active" id="screenshot" role="tabpanel">
+                <div class="p-3 py-md-5">
+                    <h2 class="text-center" style="font-size:2rem;font-weight:800;color:#0f172a;margin:0;">App <span
+                            style="color:#c30010;">Screenshots</span></h2>
+                    <div style="width:66px;height:4px;background-color:#c30010;border-radius:3px;margin:14px auto 26px;"></div>
+
+                    <h3 style="font-size:1.25rem;font-weight:700;color:#1b2233;margin:22px 0 6px;">Creating Budget</h3>
+                    <p style="color:#5b6472;font-size:15.5px;line-height:1.6;margin:0 0 12px;">Create Budget from Accounting > Accounting > Budgets > New.
+
+</p>
+                    <div style="border:1px solid #efe3e3;border-radius:14px;overflow:hidden;margin-bottom:6px;"><img
+                            src="./assets/screenshots/1.png" alt="Specific Menu (Before)"
+                            style="width:100%;height:auto;display:block;"></div>
+
+                    <h3 style="font-size:1.25rem;font-weight:700;color:#1b2233;margin:28px 0 6px;">Budget Records </h3>
+                    <p style="color:#5b6472;font-size:15.5px;line-height:1.6;margin:0 0 12px;"> Can see the list view of the Budget records.</p>
+                    <div style="border:1px solid #efe3e3;border-radius:14px;overflow:hidden;margin-bottom:6px;"><img
+                            src="./assets/screenshots/2.png" alt="Create a New Hidden-Menu Rule"
+                            style="width:100%;height:auto;display:block;"></div>
+
+                    <h3 style="font-size:1.25rem;font-weight:700;color:#1b2233;margin:28px 0 6px;">Create Budgetary Positions.</h3>
+                    <p style="color:#5b6472;font-size:15.5px;line-height:1.6;margin:0 0 12px;">
+                        Create Budgetary Positions from Accounting -> Configuration -> Budgetary Positions.</p>
+                    <div style="border:1px solid #efe3e3;border-radius:14px;overflow:hidden;margin-bottom:6px;"><img
+                            src="./assets/screenshots/3.png" alt="Select Menus to Hide"
+                            style="width:100%;height:auto;display:block;"></div>
+
+                    <h3 style="font-size:1.25rem;font-weight:700;color:#1b2233;margin:28px 0 6px;">List View of the Budgetary Positions.</h3>
+                    <p style="color:#5b6472;font-size:15.5px;line-height:1.6;margin:0 0 12px;">We can set-up the records and that will be shown in the list view.</p>
+                    <div style="border:1px solid #efe3e3;border-radius:14px;overflow:hidden;margin-bottom:6px;"><img
+                            src="./assets/screenshots/4.png" alt="Menus Hidden for the User"
+                            style="width:100%;height:auto;display:block;"></div>
+                    <h3 style="font-size:1.25rem;font-weight:700;color:#1b2233;margin:28px 0 6px;">Budget
+Form view. </h3>
+                    <p style="color:#5b6472;font-size:15.5px;line-height:1.6;margin:0 0 12px;">  The Budget records and the Budgetary Positions can be added in the forms.</p>
+                    <div style="border:1px solid #efe3e3;border-radius:14px;overflow:hidden;margin-bottom:6px;"><img
+                            src="./assets/screenshots/5.png" alt="Create a New Hidden-Menu Rule"
+                            style="width:100%;height:auto;display:block;"></div>
+
+                    <h3 style="font-size:1.25rem;font-weight:700;color:#1b2233;margin:28px 0 6px;">Budget  Report. </h3>
+                    <p style="color:#5b6472;font-size:15.5px;line-height:1.6;margin:0 0 12px;"> For Budget report, go to Accounting > Reporting > Management > Budgets.</p>
+                    <div style="border:1px solid #efe3e3;border-radius:14px;overflow:hidden;margin-bottom:6px;"><img
+                            src="./assets/screenshots/6.png" alt="Create a New Hidden-Menu Rule"
+                            style="width:100%;height:auto;display:block;"></div>
+
+
+
+                </div>
+            </div>
+
+            <!-- Features tab -->
+            <div class="tab-pane fade" id="features" role="tabpanel">
+                <div class="p-3 py-md-5">
+                    <h2 class="text-center" style="font-size:2rem;font-weight:800;color:#0f172a;margin:0;">Detailed
+                        <span style="color:#c30010;">Features</span></h2>
+                    <div style="width:70px;height:4px;margin:14px auto 10px;border-radius:3px;background-color:#c30010;"></div>
+                    <table style="width:100%;border-collapse:separate;border-spacing:14px;">
+                                                <tr>
+                            <td style="width:25%;vertical-align:top;background-color:#fdefef;border:1px solid #efe3e3;border-left:4px solid #c30010;border-radius:14px;padding:22px;">
+                                <div style="display:inline-block;width:44px;height:44px;border-radius:50%;background-color:#c30010;color:#fff;font-size:1rem;font-weight:700;text-align:center;line-height:44px;margin-bottom:12px;">
+                                    01
+                                </div>
+                                <div style="font-size:1.08rem;font-weight:700;margin:0 0 6px;color:#0f172a;line-height:1.3;">
+                                    Budgetary Positions
+                                </div>
+                                <div style="font-size:14px;color:#334155;margin:0;line-height:1.55;">
+                                    Group general ledger accounts into structured budget heads to categorize revenue and expense tracking accurately.
+                                </div>
+                            </td>
+                            <td style="width:25%;vertical-align:top;background-color:#fdefef;border:1px solid #efe3e3;border-left:4px solid #c30010;border-radius:14px;padding:22px;">
+                                <div style="display:inline-block;width:44px;height:44px;border-radius:50%;background-color:#c30010;color:#fff;font-size:1rem;font-weight:700;text-align:center;line-height:44px;margin-bottom:12px;">
+                                    02
+                                </div>
+                                <div style="font-size:1.08rem;font-weight:700;margin:0 0 6px;color:#0f172a;line-height:1.3;">
+                                    Analytic Budget Allocation
+                                </div>
+                                <div style="font-size:14px;color:#334155;margin:0;line-height:1.55;">
+                                    Assign budgets to specific analytic accounts and cost centers to monitor project or department-level spending.
+                                </div>
+                            </td>
+                            <td style="width:25%;vertical-align:top;background-color:#fdefef;border:1px solid #efe3e3;border-left:4px solid #c30010;border-radius:14px;padding:22px;">
+                                <div style="display:inline-block;width:44px;height:44px;border-radius:50%;background-color:#c30010;color:#fff;font-size:1rem;font-weight:700;text-align:center;line-height:44px;margin-bottom:12px;">
+                                    03
+                                </div>
+                                <div style="font-size:1.08rem;font-weight:700;margin:0 0 6px;color:#0f172a;line-height:1.3;">
+                                    Practical &amp; Theoretical Tracking
+                                </div>
+                                <div style="font-size:14px;color:#334155;margin:0;line-height:1.55;">
+                                    Automatically compare planned targets against real-time actual spending and prorated theoretical progress.
+                                </div>
+                            </td>
+                            <td style="width:25%;vertical-align:top;background-color:#fdefef;border:1px solid #efe3e3;border-left:4px solid #c30010;border-radius:14px;padding:22px;">
+                                <div style="display:inline-block;width:44px;height:44px;border-radius:50%;background-color:#c30010;color:#fff;font-size:1rem;font-weight:700;text-align:center;line-height:44px;margin-bottom:12px;">
+                                    04
+                                </div>
+                                <div style="font-size:1.08rem;font-weight:700;margin:0 0 6px;color:#0f172a;line-height:1.3;">
+                                    Budget Workflow &amp; Analysis
+                                </div>
+                                <div style="font-size:14px;color:#334155;margin:0;line-height:1.55;">
+                                    Control budgets with a multi-stage approval workflow and evaluate performance across list, kanban, or graphical views.
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+
+            <!-- FAQ tab -->
+            <div class="tab-pane fade" id="faq" role="tabpanel">
+                <div class="p-3 py-md-5">
+                    <h2 class="text-center" style="font-size:2rem;font-weight:800;color:#0f172a;">Frequently Asked <span
+                            style="color:#c30010;">Questions</span></h2>
+                    <div style="width:70px;height:4px;margin:14px auto 30px;border-radius:3px;background-color:#c30010;"></div>
+                    <div style="max-width:900px;margin:0 auto;">
+                        <details
+                                style="background-color:#fff;border:1px solid #f0e6e6;border-radius:14px;margin-bottom:14px;padding:2px 8px;"
+                                open>
+                            <summary
+                                    style="cursor:pointer;padding:16px 14px;font-weight:700;font-size:1.05rem;color:#1b2233;">
+                                                            Can I generate Budgetary Reports with this module?
+                            </summary>
+                            <div style="padding:0 14px 18px;color:#475062;font-size:15px;line-height:1.65;">Yes, the module provides various budgetary
+                                                            reports that give detailed insights into
+                                                            your financial planning, budget allocation,
+                                                            and expenditures. These reports allow for
+                                                            better decision-making and help monitor the
+                                                            financial health of your organization.
+                            </div>
+                        </details>
+                        <details
+                                style="background-color:#fff;border:1px solid #f0e6e6;border-radius:14px;margin-bottom:14px;padding:2px 8px;">
+                            <summary
+                                    style="cursor:pointer;padding:16px 14px;font-weight:700;font-size:1.05rem;color:#1b2233;">
+                              Does the module support Odoo 19 Community Edition?
+                            </summary>
+                            <div style="padding:0 14px 18px;color:#475062;font-size:15px;line-height:1.65;">                                                           Yes, this module is specifically designed to work with Odoo 19 Community Edition and not for odoo 19 enterprise edition.
+
+                            </div>
+                        </details>
+                        <details
+                                style="background-color:#fff;border:1px solid #f0e6e6;border-radius:14px;margin-bottom:14px;padding:2px 8px;">
+                            <summary
+                                    style="cursor:pointer;padding:16px 14px;font-weight:700;font-size:1.05rem;color:#1b2233;">
+                                How can I create and manage budgets in this module?
+                            </summary>
+                            <div style="padding:0 14px 18px;color:#475062;font-size:15px;line-height:1.65;">  You can create budgets by defining budgetary
+                                                            positions and linking them with analytic accounts.
+                                                            After that, you can plan your budget by assigning
+                                                            specific amounts to each analytic account.
+                            </div>
+                        </details>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest Release tab -->
+            <div class="tab-pane fade" id="latest-release" role="tabpanel">
+                <div class="p-3 py-md-5">
+                    <h2 class="mainhead text-center mb-4" style="font-size: 2rem;font-weight: 700;color: black;">
+                        Latest <span>Releases</span></h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="release-item h-100"
+                                 style="position: relative;padding: 30px;border: 2px solid #c3001024;border-radius: 15px;">
+                                <div class="release-header d-flex align-items-center flex-wrap gap-3"
+                                     style="margin-bottom: 0.75rem;">
+                                    <div class="version" style="font-size: 1.25rem;font-weight: 700;color: #1a202c;">
+                                        Latest Release 19.0.1.0.2
+                                    </div>
+                                    <div style="padding: 0.25rem 0.75rem;border-radius: 20px;font-size: 0.75rem;font-weight: 600;text-transform: uppercase;letter-spacing: 0.5px;background-color: #c7d2fe;color: #3730a3;border: 2px solid #a5b4fc;"
+                                         class="imp">UPDT
+                                    </div>
+                                    <div class="date"
+                                         style="color: #64748b;font-size: 0.875rem;font-weight: 500;gap: 0.5rem;">
+                                        <img src="./assets/calendar.png" alt="" width="16" height="16"
+                                             style="margin-right: 5px;">
+                                        Novemeber 06, 2026
+                                    </div>
+                                </div>
+                                <div class="feature-list">
+                                    <div class="feature-item p-3"
+                                         style="border-radius: 5px;display: flex;align-items: center;padding: 25px;background-color: #f5f5f5e7;border-radius: 10px;text-align: left;">
+                                        <div class="feature-text"
+                                             style="color: #6b7280;line-height: 1.6;font-size: 0.95rem;"> Added `cybrosys_support_client` as a dependency module and enhanced the module index page with updated feature descriptions and documentation.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="release-item h-100"
+                                 style="position: relative;padding: 30px;border: 2px solid #c3001024;border-radius: 15px;">
+                                <div class="release-header d-flex align-items-center flex-wrap gap-3"
+                                     style="margin-bottom: 0.75rem;">
+                                    <div class="version" style="font-size: 1.25rem;font-weight: 700;color: #1a202c;">
+                                        Release 19.0.1.0.0
+                                    </div>
+                                    <div style="padding: 0.25rem 0.75rem;border-radius: 20px;font-size: 0.75rem;font-weight: 600;text-transform: uppercase;letter-spacing: 0.5px;background-color: #9ae6b4;color: #2d7d32;border: 2px solid #68d391;"
+                                         class="add">Add
+                                    </div>
+                                    <div class="date"
+                                         style="color: #64748b;font-size: 0.875rem;font-weight: 500;gap: 0.5rem;">
+                                        <img src="./assets/calendar.png" alt="" width="16" height="16"
+                                             style="margin-right: 5px;">
+                                        19th September, 2025
+                                    </div>
+                                </div>
+                                <div class="feature-list">
+                                    <div class="feature-item p-3"
+                                         style="border-radius: 5px;display: flex;align-items: center;padding: 25px;background-color: #f5f5f5e7;border-radius: 10px;text-align: left;">
+                                        <div class="feature-text"
+                                             style="color: #6b7280;line-height: 1.6;font-size: 0.95rem;">Initial Commit
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ===== Related Modules ===== -->
+<div class="container-fluid cmpad py-2 py-md-5">
+    <div class="highlights-section">
+
+        <h2 class="mainhead text-center" style="font-size: 2rem;font-weight: 700;color: black;">Related
+            <span>Modules</span>
+        </h2>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <a href="https://apps.odoo.com/apps/modules/18.0/dynamic_accounts_report"
+                   style="text-decoration: none;">
+                    <div class="highlight-card h-100 p-4" style="background-color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #c300101a;
+    position: relative;
+    overflow: hidden;">
+
+
+                        <div class="card-image" style="    border: 2px solid #c300101c;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;">
+                            <img src="./assets/modules/1.png" alt="" style="width: 100%;border-radius: 10px;">
+                        </div>
+
+                        <h3 class="card-title"
+                            style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                            Odoo18 Dynamic Accounting Reports</h3>
+                        <p class="card-description"
+                           style="font-size: 16px;color: #6b7280;margin-bottom: 0;line-height: 1.6;">Odoo 18
+                            Accounting
+                            Financial Reports,Dynamic Accounting Reports, Dynamic Financial Reports,Dynamic Report
+                            Odoo18, Odoo18,Financial Reports, Odoo18 Accounting,Accounting, Odoo Apps</p>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="https://apps.odoo.com/apps/modules/18.0/invoice_format_editor"
+                   style="text-decoration: none;">
+                    <div class="highlight-card h-100 p-4" style="background-color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #c300101a;
+    position: relative;
+    overflow: hidden;">
+
+
+                        <div class="card-image" style="    border: 2px solid #c300101c;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;">
+                            <img src="./assets/modules/2.jpg" alt="" style="width: 100%;border-radius: 10px;">
+                        </div>
+
+                        <h3 class="card-title"
+                            style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                            Invoice Format Editor</h3>
+                        <p class="card-description"
+                           style="font-size: 16px;color: #6b7280;margin-bottom: 0;line-height: 1.6;">Invoice
+                            Report,
+                            Report Editor, Customise Invoice Report.</p>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="https://apps.odoo.com/apps/modules/19.0/base_accounting_kit"
+                   style="text-decoration: none;">
+                    <div class="highlight-card h-100 p-4" style="background-color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #c300101a;
+    position: relative;
+    overflow: hidden;">
+
+
+                        <div class="card-image" style="    border: 2px solid #c300101c;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;">
+                            <img src="./assets/modules/3.gif" alt="" style="width: 100%;border-radius: 10px;">
+                        </div>
+
+                        <h3 class="card-title"
+                            style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                            Odoo 19 Accounting</h3>
+                        <p class="card-description"
+                           style="font-size: 16px;color: #6b7280;margin-bottom: 0;line-height: 1.6;">Odoo 19 Accounting for Community
+</p>
+
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- ===== Our Services ===== -->
+<div class="container-fluid cmpad py-2 py-md-5">
+    <div class="highlights-section">
+        <h2 class="mainhead text-center" style="font-size: 2rem;font-weight: 700;color: black;">Our
+            <span>Services</span>
+        </h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                     style="background-color: #c300101f;border-radius: 10px;padding: 32px;border: 2px solid #c300101a;position: relative;overflow: hidden;">
+                    <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                         style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #c30010;">
+                        <img src="./assets/setting.png" alt="" width="30" height="30">
+                    </div>
+                    <h3 class="card-title"
+                        style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">Odoo
+                        Customization</h3>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                     style="background-color: #c300101f;border-radius: 10px;padding: 32px;border: 2px solid #c300101a;position: relative;overflow: hidden;">
+                    <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                         style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #c30010;">
+                        <img src="./assets/imple.png" alt="" width="30" height="30">
+                    </div>
+                    <h3 class="card-title"
+                        style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">Odoo
+                        Implementation</h3>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                     style="background-color: #c300101f;border-radius: 10px;padding: 32px;border: 2px solid #c300101a;position: relative;overflow: hidden;">
+                    <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                         style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #c30010;">
+                        <img src="./assets/support.png" alt="" width="30" height="30">
+                    </div>
+                    <h3 class="card-title"
+                        style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">Odoo
+                        Support</h3>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                     style="background-color: #c300101f;border-radius: 10px;padding: 32px;border: 2px solid #c300101a;position: relative;overflow: hidden;">
+                    <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                         style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #c30010;">
+                        <img src="./assets/transfer.png" alt="" width="30" height="30">
+                    </div>
+                    <h3 class="card-title"
+                        style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">Odoo
+                        Migration</h3>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                     style="background-color: #c300101f;border-radius: 10px;padding: 32px;border: 2px solid #c300101a;position: relative;overflow: hidden;">
+                    <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                         style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #c30010;">
+                        <img src="./assets/idea.png" alt="" width="30" height="30">
+                    </div>
+                    <h3 class="card-title"
+                        style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">Odoo
+                        Integration</h3>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                     style="background-color: #c300101f;border-radius: 10px;padding: 32px;border: 2px solid #c300101a;position: relative;overflow: hidden;">
+                    <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                         style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #c30010;">
+                        <img src="./assets/chat.png" alt="" width="30" height="30">
+                    </div>
+                    <h3 class="card-title"
+                        style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">Odoo
+                        Consultancy</h3>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                     style="background-color: #c300101f;border-radius: 10px;padding: 32px;border: 2px solid #c300101a;position: relative;overflow: hidden;">
+                    <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                         style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #c30010;">
+                        <img src="./assets/chart.png" alt="" width="30" height="30">
+                    </div>
+                    <h3 class="card-title"
+                        style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">Odoo
+                        Licensing</h3>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                     style="background-color: #c300101f;border-radius: 10px;padding: 32px;border: 2px solid #c300101a;position: relative;overflow: hidden;">
+                    <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                         style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #c30010;">
+                        <img src="./assets/people.png" alt="" width="30" height="30">
+                    </div>
+                    <h3 class="card-title"
+                        style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">Hire Odoo
+                        Developer</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</html>
