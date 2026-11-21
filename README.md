@@ -22,6 +22,7 @@ odoo-19/
 │   └── setup/, doc/, ...
 └── custom_addons/         ← our modules and third-party modules
     ├── sl_aevon/                  Aevon Home Menu (Softycus Labs)
+    ├── sl_disable_odoo_tracking/  Stops the weekly report to Odoo S.A. (Softycus Labs)
     ├── base_accounting_kit/       Accounting kit (Cybrosys)
     ├── base_account_budget/       Budget management (Cybrosys)
     └── cybrosys_support_client/   Support helper required by the Cybrosys modules
@@ -37,6 +38,7 @@ odoo-19/
 | Module | Author | Purpose | Depends on |
 |---|---|---|---|
 | `sl_aevon` | Softycus Labs | Enterprise-style full-screen app home screen | `web` |
+| `sl_disable_odoo_tracking` | Softycus Labs | Stops the weekly database report to services.odoo.com (auto-installs) | `mail` |
 | `base_accounting_kit` | Cybrosys | Financial reports, PDC, assets, bank reconciliation, lock dates | `account`, `sale`, `account_check_printing`, `analytic`, … |
 | `base_account_budget` | Cybrosys | Budgets | `account`, `cybrosys_support_client` |
 | `cybrosys_support_client` | Cybrosys | Support assistant used by the Cybrosys modules | `web` |
@@ -64,6 +66,22 @@ sl_aevon/static/src/
 └── webclient/
     └── webclient_patch.js     shows the home screen when no app is open
 ```
+
+### `sl_disable_odoo_tracking` — no weekly report to Odoo
+
+Odoo Community has a hidden scheduled action, *Publisher: Update Notification* (in `mail`),
+that once a week posts to `services.odoo.com`: the database UUID and name, user counts,
+installed apps, the server URL (`web.base.url`), and the company name, email and phone.
+
+This module switches that job off and replaces its code so nothing is sent, even if it is
+run by hand. It has `auto_install` on, so every new database that has Discuss/mail gets it
+automatically. Uninstalling it switches Odoo's job back on.
+
+As a second layer, `odoo.conf` sets `publisher_warranty_url = http://127.0.0.1:9/`, so a
+database without the module can't reach Odoo either.
+
+Features you choose to use (SMS, IAP credits, partner autocomplete, stock images, Peppol,
+bank sync, …) still talk to Odoo's servers — that is how those features work.
 
 ---
 
